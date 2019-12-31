@@ -9,11 +9,11 @@ function addTodo(event){
     button.addEventListener('click', removeTodo)
     item.appendChild(button);
 
-    const list = document.querySelector('ul')
+    const list = document.querySelector('ul');
     list.appendChild(item)
 }
 
-document.querySelector('form').addEventListener('submit', addTodo)
+document.querySelector('form').addEventListener('submit', addTodo);
 
 function removeTodo(event){
     event.target.parentNode.remove()
